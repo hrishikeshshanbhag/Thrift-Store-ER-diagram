@@ -3,6 +3,7 @@ A ER diagram for thrift store
 Tried to minimize tables
 
 # A Eraser.io code
+<pre>
 // customer
 
 customers [icon:user,color: blue]{
@@ -51,7 +52,6 @@ orders [icon:package,color:orange]{
 orders.shipping_id - shipping.id
 customers.id < orders.customer_id
 
-
 ordered_product[icon:box,color:lightyellow]{
   id serial pk
   product_id int fk
@@ -72,4 +72,4 @@ payments[icon:money,color:lightblue]{
 }
 
 orders.id - payments.ordered_id
-
+</pre>
